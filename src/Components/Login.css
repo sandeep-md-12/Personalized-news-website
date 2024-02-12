@@ -1,0 +1,247 @@
+/* .login-container {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+    position: relative;
+    overflow: hidden;
+    width: 678px;
+    max-width: 100%;
+    min-height: 400px;
+  }
+  .eFUeuZ{
+    background-color: #41aaff;
+  }
+  .overlay-container {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+  }
+  
+  .overlay {
+    background: #41aaff;
+    background: -webkit-linear-gradient(to right, #41aaff, #41aaff);
+    background: linear-gradient(to right, #41aaff, #41aaff);
+    color: #ffffff;
+    position: relative;
+    left: -100%;
+    height: 100%;
+    width: 200%;
+  }
+  
+  .overlay-left {
+      transform: translateX(-50%);
+  }
+  
+  .overlay-panel {
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      padding: 0px;
+      text-align:center;
+      top:0;
+      height:100%;
+      width:50%;
+  }
+  
+  .overlay-left .overlay-panel.overlay-right,
+  .overlay-right .overlay-panel.overlay-left {
+      transform: translateX(20%);
+  }
+  
+  .btn-ghost {
+      border-radius:20px;
+      border-color:#ffffff;
+      color:#ffffff
+  }
+   */
+
+.logo-wrap {
+    position: absolute;
+    top:60%;
+    left: 81%;
+    transform: translate(-50%,-50%);
+    width: 300px;
+    height: 10vh;
+    z-index: 999;
+    position: fixed;
+  }
+  
+  .st0 {
+    stroke: #ffffff !important;
+    fill: #ffffff;
+    stroke-dasharray: 920;
+    opacity: 1;
+    animation: logo-animation cubic-bezier(0.67, 0.7, 0.175, 1) 6s forwards;
+    animation-iteration-count: infinite;
+  
+  }
+  .st1 {
+    font-family:fantasy;
+    font-size: 220px !important;
+    letter-spacing:15px;
+  }
+  
+  /* .st2 {
+    font-size:200px !important;
+    letter-spacing:15px;
+    
+  } */
+  
+  
+  
+.final {
+  position: fixed;
+  top: 50% !important;
+  left: 45% !important;
+  transform: translate(-50%, -50%) scale(0);
+}
+
+.final.show {
+  transform: translate(-50%, -50%) scale(1);
+  animation: show 0.5s ease-in;
+}
+
+@keyframes show {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  80% {
+    transform: translate(-50%, -50%) scale(1.4);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
+  @keyframes logo-animation{
+    0%{
+      opacity: 0;
+      fill: none;
+      stroke-dasharray: 920;
+    }
+    30%{
+      opacity: 1;
+    }
+    50%{
+      fill: rgba(255,255,255,.0);
+    }
+    100%{
+      opacity: 1;
+      stroke-dasharray: 200;
+      stroke: transparent;
+      fill: #ffffff;
+    }
+  }
+  
+   @media screen and (max-width: 700px){
+    .image_slideshow{
+      background-color: rebeccapurple !important;
+    }
+    .image_slideshow img{
+      position: absolute !important;
+      top:500px;
+      left:100px;
+      z-index: 999 !important;
+      overflow: auto;
+      width: 100px;
+    }
+    .login_page{
+      background-color: rgb(4, 7, 7);
+      height: 700px;
+      width: 100%;
+      
+    }
+  }
+  .login_page {
+  background-color: rgb(3, 3, 44);
+    height: 100vh;
+    width: 100%;
+  }
+  
+.front_page{
+  z-index: 99999999999;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(3, 3, 44);
+}
+
+
+.rotate_logo1 img{
+  background-color: rgb(3, 3, 44) !important;
+  width: 320px;
+  height: 350px;
+  position: absolute;
+  right: 500px;
+  top:30px;
+  animation: rotation 10s infinite linear;
+}
+
+
+.logo-wrap1 {
+  position: absolute;
+  top:60%;
+  left: 51%;
+  transform: translate(-50%,-50%);
+  width: 300px;
+  height: 10vh;
+  z-index: 999;
+  position: fixed;
+}
+
+.st10 {
+  stroke: #ffffff !important;
+  fill: #ffffff;
+  stroke-dasharray: 920;
+  opacity: 1;
+  animation: logo-animation cubic-bezier(0.67, 0.7, 0.175, 1) 3s forwards;
+  animation-iteration-count: infinite;
+
+}
+.st11 {
+  font-family:fantasy;
+  font-size: 220px !important;
+  letter-spacing:15px;
+}
+
+.rotate_logo img{
+  background-color: rgb(3, 3, 44) !important;
+  width: 320px;
+  height: 350px;
+  position: absolute;
+  right: 100px;
+  top:30px;
+  animation: rotation 40s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+      transform: rotate(0deg);
+  }
+  to {
+      transform: rotate(360deg);
+  }
+}
+  .carousel-indicators button {
+    background-color:rgb(125, 228, 185) !important
+  }
+  
+  
+  .carousel-item img {
+    height: 300px;
+    width: 600px;
+    margin-bottom: 70px;
+    object-fit: cover;
+  }
+  .image_slideshow {
+    top: 100px !important;
+    right:0px !important;
+  }
+  
+  
+  
